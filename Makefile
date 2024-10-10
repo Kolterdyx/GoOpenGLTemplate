@@ -3,8 +3,11 @@ NAME = scop
 
 $(NAME): all
 
-all:
+all: get
 	go build
+
+get:
+	go get
 
 clean:
 	@true
